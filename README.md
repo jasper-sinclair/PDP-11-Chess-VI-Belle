@@ -3,7 +3,7 @@ Groundbreaking 1970s/1980s era chess machine, now with full UCI support
 
 ## About Belle:
 Developed by Ken Thompson and Joe Condon at Bell Labs in the late 70s/early 80s, the original Belle
-was a pioneering, brute-force, special-purpose hardware chess machine.Key
+was a pioneering, brute-force, special-purpose hardware chess machine.
 
 ## Features
 It was the first machine to achieve master-level play (2250 USCF rating in 1983) and won the
@@ -24,6 +24,8 @@ This repository contains Jim's orignal port and the following additions/changes:
 - Call create_book() directly from UCI command line (previously this module was an independent program).
 - Formatting -> 4 space tabs replaced with 2 space tabs
 - Clang local variable and function parameter const warnings resolved
+
+See: https://clang.llvm.org/extra/clang-tidy/checks/misc/const-correctness.html
 
 Nothing else has been altered, as every effort has been taken to change as little as possible in an effort to preserve the original programming of this historic engine, especially concerning the heart of the program (movegen, search, eval, etc.)
 
