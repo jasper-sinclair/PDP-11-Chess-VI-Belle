@@ -1,2 +1,2 @@
-# PDP-11-Chess-VI-Belle-
-Groundbreaking early 1970s chess machine, now ported to Windows with full UCI support
+# PDP-11-Chess-VI-Belle
+Groundbreaking 1970s era chess machine, now ported to Windows with full UCI support
