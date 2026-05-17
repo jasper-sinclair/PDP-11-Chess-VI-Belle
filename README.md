@@ -25,7 +25,7 @@ This repository contains Jim's orignal port and the following additions/changes:
 - Formatting -> 4 space tabs replaced with 2 space tabs
 - Clang local variable and function parameter const warnings resolved
 
-These don't change the core logic in any way, they are simplt compiler friendly improvements.
+These don't change the core logic in any way, but are compiler friendly.
 
 See: https://clang.llvm.org/extra/clang-tidy/checks/misc/const-correctness.html
 
