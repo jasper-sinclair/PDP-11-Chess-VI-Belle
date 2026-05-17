@@ -96,3 +96,8 @@ C:\DEV\CHESS6\chess6\src>chess6.exe -uci -nobook -post
 - uciok
 - book
 - Book Compiled Cleanly! Total Positions: 34
+
+## Compiling
+Visual Studio 2026 project files are included.
+
+It also compiles cleanly in the MSYS2 Mingw64 environment using the included makefile.
