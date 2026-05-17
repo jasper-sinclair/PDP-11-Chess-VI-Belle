@@ -59,6 +59,7 @@ Jasper
 
 To add openings, simply edit this function and add book lines.
 
+```
 int create_book(void){
   memset(tree,0,sizeof(tree));
   tree[0].depth = 0;
@@ -84,7 +85,7 @@ int create_book(void){
       tree[i].file_offset = 0;
     }
   }
-  
+  ```
   then enter 'book' from the UCI command line:
   
 C:\DEV\CHESS6\chess6\src>chess6.exe -uci -nobook -post
