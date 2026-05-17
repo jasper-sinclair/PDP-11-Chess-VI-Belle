@@ -56,9 +56,6 @@ Add -uci -nobook -post (or whatever options you want) to the engine's Command Li
 
 ![Arena Screenshot](arena.png)
 
-Have fun-
-Jasper
-
 ## Book
 
 To add openings, simply edit this function and add book lines.
