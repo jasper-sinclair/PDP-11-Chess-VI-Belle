@@ -264,7 +264,7 @@ int engine_search(void);
 void wb_count_node(void);
 /* Perft*/
 uint64_t perft(int depth);
-void divide(int depth);
+uint64_t divide(int depth);
 void move_to_uci(int move, char* buf);
 
 /* Direction tables */

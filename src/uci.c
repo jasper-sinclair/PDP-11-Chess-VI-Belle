@@ -301,7 +301,7 @@ void uci_loop(void){
         get_current_time_ms();
 
       const uint64_t nodes=
-        perft(depth);
+        divide(depth);
 
       const long elapsed=
         get_current_time_ms() - start;
@@ -315,7 +315,7 @@ void uci_loop(void){
           (nodes * 1000ULL) / elapsed);
       }
     }
-    else if (!strncmp(line, "divide ", 7)) {
+    else if (!strncmp(line, "perft ", 6)) {
       divide(atoi(line + 7));
     }
     fflush(stdout);

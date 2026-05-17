@@ -4,7 +4,7 @@
 /* --------------------------------------------------------- */
 /* Recursive perft                                           */
 /* --------------------------------------------------------- */
-static uint64_t perft_search(const int depth){
+uint64_t perft(const int depth){
   if (depth == 0)
     return 1ULL;
 
@@ -41,7 +41,7 @@ static uint64_t perft_search(const int depth){
 
     mantom ^= 1;
 
-    nodes += perft_search(depth - 1);
+    nodes += perft(depth - 1);
 
     mantom ^= 1;
 
@@ -65,11 +65,8 @@ static uint64_t perft_search(const int depth){
 /* --------------------------------------------------------- */
 /* Public entry                                              */
 /* --------------------------------------------------------- */
-uint64_t perft(const int depth){
-  return perft_search(depth);
-}
 
-void divide(const int depth){
+uint64_t divide(const int depth){
   const long start_time =
     get_current_time_ms();
 
@@ -97,7 +94,7 @@ void divide(const int depth){
     mantom ^= 1;
 
     const uint64_t nodes =
-      perft_search(depth - 1);
+      perft(depth - 1);
 
     mantom ^= 1;
 
@@ -117,17 +114,5 @@ void divide(const int depth){
 
   lmp = saved_lmp;
 
-  const long elapsed =
-    get_current_time_ms() - start_time;
-
-  printf("\n");
-
-  printf("Total nodes: %llu\n",total);
-
-  printf("Time: %ld ms\n",elapsed);
-
-  if (elapsed > 0){
-    printf("NPS: %llu\n",
-      (total * 1000ULL) / elapsed);
-  }
+  return total;
 }
