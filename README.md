@@ -25,9 +25,11 @@ This repository contains Jim's orignal port and the following additions/changes:
 - Formatting -> 4 space tabs replaced with 2 space tabs
 - Clang local variable and function parameter const warnings resolved
 
+These don't change the core logic in any way, they are simplt compiler friendly improvements.
+
 See: https://clang.llvm.org/extra/clang-tidy/checks/misc/const-correctness.html
 
-Nothing else has been altered, as every effort has been taken to change as little as possible in an effort to preserve the original programming of this historic engine, especially concerning the heart of the program (movegen, search, eval, etc.)
+Nothing else has been altered, as my intention was to change as little as possible in an effort to preserve the original programming of this historic engine, especially concerning the core functionality (movegen, search, eval, etc.)
 
 ## Protocol modes
 The engine supports 3 modes: console, winboard, and UCI.
