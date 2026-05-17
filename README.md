@@ -54,3 +54,43 @@ Add -uci -nobook -post (or whatever options you want) to the engine's Command Li
 
 Have fun-
 Jasper
+
+## Book
+
+To add openings, simply edit this function and add book lines.
+
+int create_book(void){
+  memset(tree,0,sizeof(tree));
+  tree[0].depth = 0;
+  
+  // --- REPAIR: ALEKHINE (limited to 4 moves each) ---
+  add_line("e2e4 g8f6 c2c3 d7d5 e4d5 d8d5 d2d4 c8f5");
+
+  // --- WHITE REPERTOIRE (limited) ---
+  add_line("e2e4 e5 g1f3 b8c6 f1c4 f8c5 c2c3 g8f6");
+  add_line("d2d4 d5 c1f4 g8f6 e3 e6 g1f3 f8d6");
+  add_line("e2e4 c7c5 c3 d5 e4d5 d8d5 d2d4 g8f6");
+
+  // --- BLACK REPERTOIRE (limited) ---
+  add_line("e2e4 c6 d2d4 d5 b1c3 d5e4 c3e4 c8f5");
+  add_line("d2d4 d5 c4 e6 b1c3 g8f6 g1f3 f8e7");
+
+  int current_ptr = 2;
+  for (int i = 0; i < position_count; i++){
+    if (tree[i].num_edges > 0){
+      tree[i].file_offset = current_ptr;
+      current_ptr += (tree[i].num_edges * 4);
+    } else{
+      tree[i].file_offset = 0;
+    }
+  }
+  
+  then enter 'book' from the UCI command line:
+  
+C:\DEV\CHESS6\chess6\src>chess6.exe -uci -nobook -post
+- uci
+- id name Belle PDP-11 (chess.6)
+- id author Original: Thompson/Condon, modern port: Jim Ablett & Jasper
+- uciok
+- book
+- Book Compiled Cleanly! Total Positions: 34
