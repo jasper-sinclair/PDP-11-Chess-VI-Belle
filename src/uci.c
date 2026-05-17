@@ -294,6 +294,64 @@ void uci_loop(void){
     } else if (! strncmp(line,"quit",4)){
       break;
     }
+    else if (!strncmp(line, "perft ", 6)) {
+      const int depth=atoi(line + 6);
+
+      const long start=
+        get_current_time_ms();
+
+      const uint64_t nodes=
+        perft(depth);
+
+      const long elapsed=
+        get_current_time_ms() - start;
+
+      printf("nodes %llu\n", nodes);
+      printf("time %ld ms\n", elapsed);
+
+      if (elapsed > 0) {
+
+        printf("nps %llu\n",
+          (nodes * 1000ULL) / elapsed);
+      }
+    }
+    else if (!strncmp(line, "divide ", 7)) {
+      divide(atoi(line + 7));
+    }
     fflush(stdout);
+  }
+}
+void move_to_uci(const int move, char* buf) {
+
+  const int from=(move >> 8) & 0xFF;
+  const int to=move & 0xFF;
+
+  const int from_file=from % 8;
+  const int from_rank=8 - (from / 8);
+
+  const int to_file=to % 8;
+  const int to_rank=8 - (to / 8);
+
+  buf[0]='a' + from_file;
+  buf[1]='0' + from_rank;
+  buf[2]='a' + to_file;
+  buf[3]='0' + to_rank;
+
+  /*
+   * Promotion handling
+   */
+  const int piece=board[from];
+
+  if ((piece == -1 && to < 8) ||
+    (piece == 1 && to > 55)) {
+
+    /*
+     * Belle always promotes to queen
+     */
+    buf[4]='q';
+    buf[5]='\0';
+  }
+  else {
+    buf[4]='\0';
   }
 }

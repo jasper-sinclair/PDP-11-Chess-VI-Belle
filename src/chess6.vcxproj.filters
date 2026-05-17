@@ -90,6 +90,9 @@
     <ClCompile Include="uci.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="perft.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="chess.h">
@@ -102,6 +105,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="create_book\create_book.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="perft.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

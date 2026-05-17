@@ -262,6 +262,10 @@ void position_traverse(void (*f)(int, intptr_t), const int* p, intptr_t a);
 int winboard_should_stop(void);
 int engine_search(void);
 void wb_count_node(void);
+/* Perft*/
+uint64_t perft(int depth);
+void divide(int depth);
+void move_to_uci(int move, char* buf);
 
 /* Direction tables */
 extern const int knight_offsets[8];

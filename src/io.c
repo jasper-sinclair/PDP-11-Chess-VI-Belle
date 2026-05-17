@@ -4,6 +4,7 @@
 #if defined(__FreeBSD__) || defined(__NetBSD__) || defined(__OpenBSD__) || defined(__DragonFly__)
 #undef getchar
 #endif
+
 void print_score_wrapper(const int m, const intptr_t a){
   (void)a;
   print_score1(m);
@@ -234,3 +235,4 @@ void print_score(void){
   position_traverse(print_score_wrapper,(int*)p,0);
   putchar_c('\n');
 }
+

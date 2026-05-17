@@ -152,6 +152,7 @@
     <ClCompile Include="main.c" />
     <ClCompile Include="mater.c" />
     <ClCompile Include="move.c" />
+    <ClCompile Include="perft.c" />
     <ClCompile Include="play.c" />
     <ClCompile Include="savres.c" />
     <ClCompile Include="see.c" />
@@ -167,6 +168,7 @@
   <ItemGroup>
     <ClInclude Include="chess.h" />
     <ClInclude Include="create_book\create_book.h" />
+    <ClInclude Include="perft.h" />
     <ClInclude Include="uci.h" />
     <ClInclude Include="winboard.h" />
   </ItemGroup>

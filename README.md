@@ -101,3 +101,60 @@ C:\DEV\CHESS6\chess6\src>chess6.exe -uci -nobook -post
 Visual Studio 2026 project files are included.
 
 It also compiles cleanly in the MSYS2 Mingw64 environment using the included makefile.
+
+## Perft Results
+Processor 13th Gen Intel(R) Core(TM) i9-13900K (3.00 GHz)
+Installed RAM 32.0 GB (31.7 GB usable)
+
+```
+chess6.exe -uci -nobook -post
+perft 6
+a2a3: 4463267
+a2a4: 5363555
+b2b3: 5310358
+b2b4: 5293555
+c2c3: 5417640
+c2c4: 5866666
+d2d3: 8073082
+d2d4: 8879566
+e2e3: 9726018
+e2e4: 9771632
+f2f3: 4404141
+f2f4: 4890429
+g2g3: 5346260
+g2g4: 5239875
+h2h3: 4463070
+h2h4: 5385554
+b1c3: 5708064
+b1a3: 4856835
+g1h3: 4877234
+g1f3: 5723523
+nodes 119060324
+time 2797 ms
+nps 42567151
+
+perft 7
+a2a3: 106743106
+a2a4: 137077337
+b2b3: 133233975
+b2b4: 134087476
+c2c3: 144074944
+c2c4: 157756443
+d2d3: 227598692
+d2d4: 269605599
+e2e3: 306138410
+e2e4: 309478263
+f2f3: 102021008
+f2f4: 119614841
+g2g3: 135987651
+g2g4: 130293018
+h2h3: 106678423
+h2h4: 138495290
+b1c3: 148527161
+b1a3: 120142144
+g1h3: 120669525
+g1f3: 147678554
+nodes 3195901860
+time 108296 ms
+nps 29510802
+```
