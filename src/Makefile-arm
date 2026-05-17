@@ -1,0 +1,9 @@
+all:
+	armv7a-linux-androideabi21-clang -o pdp-11_chess_6_ja_armv7a *.c -mthumb -march=armv7-a -mfloat-abi=softfp -mfpu=neon \
+	-lm -latomic -m32 -stdlib=libc -fPIE -pie -flto=auto -Ofast -pipe -finline-functions \
+	-fuse-ld=lld -MMD -MP -ffast-math -funroll-loops -fno-rtti -fstrict-aliasing -fomit-frame-pointer -s -w \
+	-funsafe-math-optimizations -fsee
+	
+	
+	 
+	

@@ -1,0 +1,1 @@
+chess6.exe -uci -nobook -post
