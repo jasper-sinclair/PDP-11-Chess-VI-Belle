@@ -1,10 +1,6 @@
 # PDP-11-Chess-VI-Belle
 Groundbreaking 1970s/1980s era chess machine, now with full UCI support
 
-  [![Release][release-badge]][release-link]
-  [![Commits][commits-badge]][commits-link]
-  ![Downloads][downloads-badge]
-  
 ## About Belle:
 Developed by Ken Thompson and Joe Condon at Bell Labs in the late 70s/early 80s, the original Belle
 was a pioneering, brute-force, special-purpose hardware chess machine.
@@ -105,10 +101,3 @@ C:\DEV\CHESS6\chess6\src>chess6.exe -uci -nobook -post
 Visual Studio 2026 project files are included.
 
 It also compiles cleanly in the MSYS2 Mingw64 environment using the included makefile.
-
-[license-badge]:https://img.shields.io/github/license/jasper-sinclair/PDP-11-Chess-VI-Belle?style=for-the-badge&label=license&color=success
-[release-badge]:https://img.shields.io/github/v/release/jasper-sinclair/PDP-11-Chess-VI-Belle?style=for-the-badge&label=official%20release
-[release-link]:https://github.com/jasper-sinclair/PDP-11-Chess-VI-Belle/releases/latest
-[commits-badge]:https://img.shields.io/github/commits-since/jasper-sinclair/PDP-11-Chess-VI-Belle/latest?style=for-the-badge
-[commits-link]:https://github.com/jasper-sinclair/PDP-11-Chess-VI-Belle/commits/main
-[downloads-badge]:https://img.shields.io/github/downloads/jasper-sinclair/PDP-11-Chess-VI-Belle/total?color=success&style=for-the-badge
