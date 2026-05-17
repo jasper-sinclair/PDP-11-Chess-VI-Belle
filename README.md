@@ -50,8 +50,7 @@ Choose Engines then Manage from the drop down menu.
 
 Add -uci -nobook -post (or whatever options you want) to the engine's Command Line Parameter input field.
 
-![alt tag](https://github.com/jasper-sinclair/PDP-11-Chess-VI-Belle/main/arena.png)
-
+![Arena Screenshot](arena.png)
 
 Have fun-
 Jasper
