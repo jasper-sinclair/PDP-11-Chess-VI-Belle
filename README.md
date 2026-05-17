@@ -25,6 +25,8 @@ This repository contains Jim's orignal port and the following additions/changes:
 - Formatting -> 4 space tabs replaced with 2 space tabs
 - Clang local variable and function parameter const warnings resolved
 
+See: https://clang.llvm.org/extra/clang-tidy/checks/misc/const-correctness.html
+
 Nothing else has been altered, as every effort has been taken to change as little as possible in an effort to preserve the original programming of this historic engine, especially concerning the heart of the program (movegen, search, eval, etc.)
 
 ## Protocol modes
