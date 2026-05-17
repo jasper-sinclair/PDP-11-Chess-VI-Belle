@@ -32,8 +32,10 @@ The engine supports 3 modes: console, winboard, and UCI.
 Protocol and play options are selected via command-line parameters.
 
 For example:
-chess6.exe -uci -nobook -post
-chess6.exe -wb -nobook -post
+
+- chess6.exe -uci -nobook -post
+- chess6.exe -wb -nobook -post
+
 You can use included wb.bat or uci.bat to start the engine this way.
 
 ## Console Mode
@@ -42,11 +44,13 @@ Console mode is the default if starting the engine without parameters-> "chess6.
 In console mode, you simply make your move in algebraic format, for ex: e2e4 then hit enter.
 After the engine announces it's move, hit ENTER again to see the board reprentation.
 
-To run the engine in arena
+To run the engine in arena:
+
 Choose Engines then Manage from the drop down menu.
+
 Add -uci -nobook -post (or whatever options you want) to the engine's Command Line Parameter input field.
 
-![alt tag](https://raw.githubusercontent.com/jasper-sinclair/PDP-11-Chess-VI-Belle/main/arena.png)
+![alt tag](https://github.com/jasper-sinclair/PDP-11-Chess-VI-Belle/main/arena.png)
 
 
 Have fun-
