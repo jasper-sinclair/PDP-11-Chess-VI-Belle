@@ -44,8 +44,8 @@ Console mode is the default if starting the engine without parameters-> "chess6.
 In console mode, you simply make your move in algebraic format, for ex: e2e4 then hit enter.
 After the engine announces it's move, hit ENTER again to see the board reprentation.
 
-To run the engine in arena:
 
+## Arena
 Choose Engines then Manage from the drop down menu.
 
 Add -uci -nobook -post (or whatever options you want) to the engine's Command Line Parameter input field.
