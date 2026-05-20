@@ -1,9 +1,13 @@
 # PDP-11-Chess-VI-Belle
 Groundbreaking 1970s/1980s era chess machine, now with full UCI support
 
+![Arena Screenshot](Belle.06230375.png)
+
+
 ## About Belle:
 Developed by Ken Thompson and Joe Condon at Bell Labs in the late 70s/early 80s, the original Belle
 was a pioneering, brute-force, special-purpose hardware chess machine.
+https://www.chessprogramming.org/Belle
 
 ## Features
 It was the first machine to achieve master-level play (2250 USCF rating in 1983) and won the
