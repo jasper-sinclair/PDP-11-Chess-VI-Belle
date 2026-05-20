@@ -1,7 +1,7 @@
 # PDP-11-Chess-VI-Belle
 Groundbreaking 1970s/1980s era chess machine, now with full UCI support
 
-![Arena Screenshot](Belle.06230375.png)
+![Screenshot](docs/Belle.06230375.png)
 
 
 ## About Belle:
@@ -58,7 +58,7 @@ Choose Engines then Manage from the drop down menu.
 
 Add -uci -nobook -post (or whatever options you want) to the engine's Command Line Parameter input field.
 
-![Arena Screenshot](arena.png)
+![Arena Screenshot](docs/arena.png)
 
 ## Book
 
